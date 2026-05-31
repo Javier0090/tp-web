@@ -41,3 +41,16 @@ footer{
    text-align: center;
    background-color: rgb(152, 145, 145);
 }
+/*Estilos de la pagina contatco */
+
+form {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en fila vertical */
+    max-width: 300px;       /* Limita el ancho del formulario */
+    gap: 10px;              /* Deja un espacio uniforme entre cada campo */
+  }
+
+  button {
+    margin-top: 10px;       /* Separa el botón del último campo */
+    align-self: flex-start; /* Evita que el botón se estire a lo ancho */
+  }
