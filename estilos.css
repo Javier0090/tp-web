@@ -5,18 +5,18 @@ body{
    line-height: 1.5;
    margin: 0 auto;
    padding: 0 1rem;
-   max-width: 1100px;
+   max-width: none;
 }
 
 h1 {
    text-align: center;
-   font-size: 60px;
+   font-size: 25px;
    color: rgb(0, 0, 0);
    background-color: rgb(100, 215, 114);
 }
 
-nav:hover{
-  background-color:white;
+nav:hover{ 
+  background: rgba(34, 139, 34, 0.4);
 }
 ol{
    display: flex;
@@ -60,8 +60,8 @@ footer{
    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 img{
-  padding: 1em;
-  width: 500px;
+  padding: 0;
+  width: 1220px;
   margin: auto;
   display: block;
 }
@@ -86,4 +86,110 @@ img{
 .texto-en-programa{
    font-style: italic;
    font-size: 1.4em;
+}
+
+/*ESTILO DE LA PAGINA INDEX*/
+
+/*.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #4db38c;
+}
+
+.menu > li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu a {
+    color: rgb(2, 1, 1);
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+.menu a:hover {
+    background: #e3e9e6;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background: #4db38c;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 180px;
+}
+
+.submenu li {
+    display: block;
+}
+.desplegable {
+    position: relative;
+}
+.desplegable:hover .submenu {
+    display: block;
+}
+*/
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.desplegable {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(34, 139, 34, 0.4);
+    min-width: 180px;
+}
+
+.submenu a {
+    display: block;
+    padding: 10px;
+}
+
+.desplegable:hover .submenu {
+    display: block;
+}
+/* FONDO IMAGEN*/
+
+.contenedorDeImagen {
+    position: relative;
+ /* o el tamaño que quieran */
+}
+
+.fondo {
+    width: 100%;
+    display: block;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+}
+
+.barra-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(106, 199, 106, 0.5);
+
+}
+.menu a:hover {
+    background: rgba(34, 139, 34, 0.4);
 }
