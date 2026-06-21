@@ -1,54 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link href="estilos.css" rel="stylesheet">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corazon Verde</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="estilos.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+     <img src="Imagenes/corazon-verde.png" alt="logo" width="80px" height="90px">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
     <h1>Programa Corazón Verde</h1>
-    </header>
-    <nav>
-        <ol>
-            <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contactos</a></li>
-        </ol>
-    </nav>
-   
-    <section>
+    <section class="contenedor">
+    <article class="encuadre">
     <h2> Primeros Auxilios y RCP</h2>
-    <p>
+    <div class="contenido-programa">
+    <img src="imagenes/Programa/Primeros auxilios y RCP.png" alt="Primeros Auxilios">
+    <p class="texto-en-programa">
     Talleres prácticos para enseñar a la comunidad técnicas de primeros auxilios y reanimación cardiopulmonar.
     Dirigido a: Jóvenes, adultos y docentes que quieran adquirir habilidades de emergencia.
     Cómo participar: Inscribiéndote a través de nuestra web o redes sociales.
     </p>
-     <h2>Merenderos Comunitarios</h2>
-    <p>
+    </div>
+    </article>
+    <article class="encuadre">
+    <h2>Merenderos Comunitarios</h2>
+    <div class="contenido-programa invertido">
+    <img src="imagenes/Programa/Merenderos comunitarios.png" alt="Merenderos Comunitarios">
+    <p class="texto-en-programa">
      Espacios de encuentro donde brindamos alimentación y compañía a niños y familias en situación vulnerable, de manera constante y en fechas especiales.
-     Dirigido5 a: Niños, familias y voluntarios que quieran sumarse al proyecto.
+     Dirigido a: Niños, familias y voluntarios que quieran sumarse al proyecto.
      Cómo participar: Colaborando como voluntario o donando alimentos y recursos.
     </p>
+    </div>
+    </article>
+    <article class="encuadre">    
     <h2>Donaciones Solidarias</h2>
-    <p>
+    <div class="contenido-programa">
+    <img src="imagenes/Programa/Donaciones solidarias.png" alt="Donaciones Solidarias">
+    <p class="texto-en-programa">
     Campañas de recolección de ropa, juguetes, útiles escolares y otros recursos para quienes más lo necesitan.
     Dirigido a: Personas de la comunidad que quieran donar y participar.
     Cómo participar: Entregando aportes en nuestros puntos de recolección o colaborando en la organización de campañas.
     </p>
+    </div>
+    </article>
+    <article class="encuadre">
     <h2>Talleres y Cursos Comunitarios</h2>
-    <p>
+    <div class="contenido-programa invertido">
+    <img src="imagenes/Programa/Talleres y cursos comunitarios.png" alt="Talleres y Cursos Comunitarios">
+    <p class="texto-en-programa">
     Cursos de cocina saludable, educación financiera, higiene, desarrollo personal y talleres de concientización social.
     Dirigido a: Jóvenes y adultos de la comunidad interesados en aprender y mejorar su calidad de vida.
     Cómo participar: Inscribiéndote a través de nuestro formulario de actividades.    
     </p>
+    </div>
+    </article>
+    <article class="encuadre">
     <h2>Manos Solidarias (Eventos Comunitarios)</h2>
-    <p>
+    <div class="contenido-programa">
+    <img src="imagenes/Programa/Manos solidarias (Eventos comunitarios).png" alt="Manos Solidarias (Eventos Comunitarios)">
+    <p class="texto-en-programa">
     Participación en eventos sociales, deportivos y culturales para asistir a quienes lo necesiten y fortalecer la integración comunitaria.
     Dirigido a: Voluntarios que quieran colaborar en maratones, ferias, actividades culturales y deportivas.
     Cómo participar: Registrándote como voluntario y eligiendo los eventos disponibles.
     </p>
+    </div>
+    </article>
     </section>
         <footer>
         <address>
@@ -57,5 +98,6 @@
             <a href="mailto:corazonverde@gmail.com">corazonverde@gmail.com</a>
         </address>
     </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
